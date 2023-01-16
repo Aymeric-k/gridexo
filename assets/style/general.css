@@ -15,11 +15,8 @@ body {
 
 .corps {
   margin: 0 auto;
-  width: 50%;
-  min-width: 800px;
-  background-color: white;
   padding: 10px;
-  min-height: 100vh;
+
 }
 p {
   text-align: justify;
@@ -54,7 +51,7 @@ footer{
     background-color: greenyellow;
 }
 .bleu{
-    background-color: rgba(47, 54, 255, 0.773);
+    background-color: #225095
 }
 .orange{
     background-color: orange;
@@ -62,8 +59,17 @@ footer{
 .aqua{
     background-color: rgb(177, 240, 240);
 }
-.red{
-    background-color: red;
+.rouge{
+    background-color: #dd0100;
+}
+.jaune{
+  background-color: #fac901;
+}
+.blanc{
+  background-color: #efefef;
+}
+.noir{
+  background-color: #222222;
 }
 .moyen{
     height: 120vh;

@@ -1,1 +1,122 @@
+main{
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    height: 100vh;
+}
+#grid{
+    height: 410px;
+    width: 570px;
+    display:grid ;
+    grid-template : repeat(18, 23px) / repeat(14, 32px);
+}
+div{
+    border: 2px solid black;
+    padding: 0;
+    margin: 0;
+}
 
+#Div1{
+    grid-area: 1/1/4/1;
+
+}
+#Div2{
+    grid-area: 1/2/1/9;
+}
+#Div3{
+    grid-area: 1/9/1/17;
+}
+#Div4{
+    grid-area:1/17/10/18;
+}
+#Div5{
+    grid-area:1/18/10/19;
+} 
+
+#Div6{
+    grid-area:2/2/4/9
+}
+#Div7{
+    grid-area: 2/9/4/12;
+}
+#Div8{
+    grid-area: 2/12/4/17;
+}
+#Div9{
+    grid-area: 4/1/12/1
+}
+#Div10{
+    grid-area: 4/2/12/4
+}
+#Div11{
+    grid-area: 4/4/17/4;
+}
+#Div12{
+    grid-area:4/5/10/8;
+}
+#Div13{
+    grid-area:4/8/10/8;
+}
+#Div14{
+    grid-area:4/9/10/12;
+}
+#Div15{
+    grid-area: 4/12/10/16;
+}
+#Div16{
+    grid-area: 4/16/10/16;
+}
+#Div17{
+    grid-area: 10/5/12/5;
+}
+#Div18{
+    grid-area: 10/6/12/9;
+}
+#Div19{
+    grid-area:10/9/12/12;
+}
+#Div20{
+    grid-area:10/12/12/16;
+}
+#Div21{
+    grid-area: 10/16/12/16;
+}
+#Div22{
+    grid-area: 10/17/12/19;
+}
+#Div23{
+    grid-area: 12/1/17/1;
+}
+#Div24{
+    grid-area:12/2/17/4;
+}
+#Div25 {
+    grid-area: 12/5/19/5;
+}
+#Div26{
+    grid-area:12/6/16/11;
+}
+#Div27{
+    grid-area: 12/11/16/14;
+}
+#Div28{
+    grid-area: 12/14/16/16;
+}
+#Div29{
+    grid-area: 12/16/16/16;
+}
+#Div30{
+    grid-area: 12/17/16/19;
+}
+#Div31{
+    grid-area: 17/1/19/5;
+}
+#Div32{
+    grid-area: 16/6/19/9;
+}
+#Div33{
+    grid-area: 16/9/19/14;
+}
+#Div34{
+    grid-area: 16/14/19/19
+}
