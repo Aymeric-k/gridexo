@@ -1,122 +1,138 @@
 main{
-    background-color: black;
-    display:flex;
+    display: flex;
     justify-content: center;
-    height: 100vh;
 }
 #grid{
-    height: 410px;
-    width: 570px;
+    height: 500px;
+    width: 800px;
     display:grid ;
-    grid-template : repeat(18, 23px) / repeat(14, 32px);
-}
-div{
-    border: 2px solid black;
-    padding: 0;
-    margin: 0;
-}
-
-#Div1{
-    grid-area: 1/1/4/1;
-
-}
-#Div2{
-    grid-area: 1/2/1/9;
-}
-#Div3{
-    grid-area: 1/9/1/17;
-}
-#Div4{
-    grid-area:1/17/10/18;
-}
-#Div5{
-    grid-area:1/18/10/19;
+    grid-template-areas : 
+    "w1 w1 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w4 w4 y1 y1"
+    "w1 w1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 w5 w5 w5 w5 w5 b2 b2 b2 b2 b2 b2 b2 b2 b2 w4 w4 y1 y1"
+    "w1 w1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 w5 w5 w5 w5 w5 b2 b2 b2 b2 b2 b2 b2 b2 b2 w4 w4 y1 y1"
+    "w1 w1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 w5 w5 w5 w5 w5 b2 b2 b2 b2 b2 b2 b2 b2 b2 w4 w4 y1 y1"                                  
+    "n1 n1 w6 w6 w6 w6 n2 n2 w7 w7 w7 w7 w7 w8 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r2 r2 w4 w4 y1 y1"
+    "n1 n1 w6 w6 w6 w6 n2 n2 w7 w7 w7 w7 w7 w8 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r2 r2 w4 w4 y1 y1"
+    "n1 n1 w6 w6 w6 w6 n2 n2 w7 w7 w7 w7 w7 w8 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r2 r2 w4 w4 y1 y1"
+    "n1 n1 w6 w6 w6 w6 n2 n2 w7 w7 w7 w7 w7 w8 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r2 r2 w4 w4 y1 y1"
+    "n1 n1 w6 w6 w6 w6 n2 n2 w7 w7 w7 w7 w7 w8 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r2 r2 w4 w4 y1 y1"
+    "n1 n1 w6 w6 w6 w6 n2 n2 w7 w7 w7 w7 w7 w8 y2 y2 y2 y2 y2 r1 r1 r1 r1 r1 r1 r1 r2 r2 w4 w4 y1 y1"
+    "n1 n1 w6 w6 w6 w6 n2 n2 y3 y3 r3 r3 r3 r3 b3 b3 b3 b3 b3 w9 w9 w9 w9 w9 w9 w9 z1 z1 n3 n3 n3 n3"
+    "n1 n1 w6 w6 w6 w6 n2 n2 y3 y3 r3 r3 r3 r3 b3 b3 b3 b3 b3 w9 w9 w9 w9 w9 w9 w9 z1 z1 n3 n3 n3 n3"
+    "n1 n1 w6 w6 w6 w6 n2 n2 y3 y3 r3 r3 r3 r3 b3 b3 b3 b3 b3 w9 w9 w9 w9 w9 w9 w9 z1 z1 n3 n3 n3 n3"
+    "z2 z2 r4 r4 r4 r4 n2 n2 y4 y4 z3 z3 z3 z3 z3 z3 z3 z4 z4 z4 z4 z4 z4 b4 b4 b4 y5 y5 z5 z5 z5 z5"
+    "z2 z2 r4 r4 r4 r4 n2 n2 y4 y4 z3 z3 z3 z3 z3 z3 z3 z4 z4 z4 z4 z4 z4 b4 b4 b4 y5 y5 z5 z5 z5 z5"
+    "z2 z2 r4 r4 r4 r4 n2 n2 y4 y4 z3 z3 z3 z3 z3 z3 z3 z4 z4 z4 z4 z4 z4 b4 b4 b4 y5 y5 z5 z5 z5 z5"
+    "z2 z2 r4 r4 r4 r4 n2 n2 y4 y4 z3 z3 z3 z3 z3 z3 z3 z4 z4 z4 z4 z4 z4 b4 b4 b4 y5 y5 z5 z5 z5 z5"
+    "z2 z2 r4 r4 r4 r4 n2 n2 y4 y4 z3 z3 z3 z3 z3 z3 z3 z4 z4 z4 z4 z4 z4 b4 b4 b4 y5 y5 z5 z5 z5 z5"
+    "z2 z2 r4 r4 r4 r4 n2 n2 y4 y4 r5 r5 r5 r5 n4 n4 n4 n4 n4 n4 n4 n4 n4 z6 z6 z6 z6 z6 z6 z6 z6 z6"
+    "z2 z2 r4 r4 r4 r4 n2 n2 y4 y4 r5 r5 r5 r5 n4 n4 n4 n4 n4 n4 n4 n4 n4 z6 z6 z6 z6 z6 z6 z6 z6 z6"
+    "z7 z7 z7 z7 z7 z7 z7 z7 y4 y4 r5 r5 r5 r5 n4 n4 n4 n4 n4 n4 n4 n4 n4 z6 z6 z6 z6 z6 z6 z6 z6 z6"
+    "z7 z7 z7 z7 z7 z7 z7 z7 y4 y4 r5 r5 r5 r5 n4 n4 n4 n4 n4 n4 n4 n4 n4 z6 z6 z6 z6 z6 z6 z6 z6 z6";
+    grid-gap: 8px;
+    background-color: black;
+    border: 8px solid black;
 } 
 
+#Div1{
+    grid-area: w1;
+}
+#Div2{
+    grid-area: w2;
+}
+#Div3{
+    grid-area: w3;
+}
+#Div4{
+    grid-area:w4;
+}
+#Div5{
+    grid-area:y1;
+} 
 #Div6{
-    grid-area:2/2/4/9
+    grid-area:b1;
 }
 #Div7{
-    grid-area: 2/9/4/12;
+    grid-area: w5;
 }
 #Div8{
-    grid-area: 2/12/4/17;
+    grid-area: b2;
 }
 #Div9{
-    grid-area: 4/1/12/1
+    grid-area: n1;
 }
 #Div10{
-    grid-area: 4/2/12/4
-}
+    grid-area: w6;
+} 
 #Div11{
-    grid-area: 4/4/17/4;
+    grid-area: n2;
 }
 #Div12{
-    grid-area:4/5/10/8;
+    grid-area:w7;
 }
 #Div13{
-    grid-area:4/8/10/8;
+    grid-area:y2;
 }
 #Div14{
-    grid-area:4/9/10/12;
+    grid-area:r1;
 }
 #Div15{
-    grid-area: 4/12/10/16;
+    grid-area: r2;
 }
 #Div16{
-    grid-area: 4/16/10/16;
+    grid-area: y3;
 }
 #Div17{
-    grid-area: 10/5/12/5;
+    grid-area: r3;
 }
 #Div18{
-    grid-area: 10/6/12/9;
+    grid-area: b3;
 }
 #Div19{
-    grid-area:10/9/12/12;
+    grid-area:w8;
 }
 #Div20{
-    grid-area:10/12/12/16;
+    grid-area:w9;
 }
 #Div21{
-    grid-area: 10/16/12/16;
+    grid-area: n3;
 }
 #Div22{
-    grid-area: 10/17/12/19;
+    grid-area: z1;
 }
 #Div23{
-    grid-area: 12/1/17/1;
+    grid-area: r4;
 }
 #Div24{
-    grid-area:12/2/17/4;
+    grid-area:y4;
 }
 #Div25 {
-    grid-area: 12/5/19/5;
+    grid-area: z2;
 }
 #Div26{
-    grid-area:12/6/16/11;
+    grid-area:z3;
 }
 #Div27{
-    grid-area: 12/11/16/14;
+    grid-area: z4;
 }
 #Div28{
-    grid-area: 12/14/16/16;
+    grid-area: b4;
 }
 #Div29{
-    grid-area: 12/16/16/16;
+    grid-area: y5;
 }
 #Div30{
-    grid-area: 12/17/16/19;
+    grid-area: z5;
 }
 #Div31{
-    grid-area: 17/1/19/5;
+    grid-area: r5;
 }
 #Div32{
-    grid-area: 16/6/19/9;
+    grid-area: n4;
 }
 #Div33{
-    grid-area: 16/9/19/14;
+    grid-area: z6;
 }
 #Div34{
-    grid-area: 16/14/19/19
+    grid-area: z7;
 }
